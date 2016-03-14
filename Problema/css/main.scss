@@ -1,0 +1,63 @@
+/*MIXINS NAVBAR*/
+@mixin navbar_mixin($background-color, $color) {
+background-color: $background-color;
+color: $color;
+}
+.navbar-default{
+    @include navbar_mixin(#27AD60 , white) ;
+}
+.navbar-default .navbar-nav .active > a {
+    @include navbar_mixin(white , black) ;
+}
+.navbar-default .navbar-nav > li > a{
+    @include navbar_mixin(#27AD60 , white) ;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    @include navbar_mixin(#27AD60 , black) ;
+}
+ .navbar-default .navbar-nav > li > a:focus{
+     @include navbar_mixin(#27AD60 , red) ;
+ }
+/*MIXINS CARROUSEL*/
+  .item{
+      background-image: url(../img/carousel-bg.jpg);
+      background-size: cover;
+      height: 530px;
+      p{
+          font-size: 25px;
+          font-weight: normal;
+      }
+  }
+.align-center{
+text-align: center;
+}
+.text-white{
+    color: white;
+}
+h1{
+    font-size: 63px;
+}
+.text_b{
+    padding: 80px 70px;
+}
+/*MIXINS PICK-PALETT*/
+@mixin pick_mixin($background-color) {
+padding: 60px;
+float: left;
+background-color: $background-color;
+}
+.pick_1{
+@include pick_mixin( #69D2E7 );
+}
+.pick_2{
+@include pick_mixin( #A7D6DB );
+}
+.pick_3{
+@include pick_mixin( #E0E4CC );
+}
+.pick_4{
+@include pick_mixin(#F38630 );
+}
+.pick_5{
+@include pick_mixin(#FA6900 );
+}
