@@ -41,29 +41,58 @@ h1 {
   padding: 80px 70px; }
 
 /*MIXINS PICK-PALETT*/
+.picks {
+  padding-left: 163px;
+  padding-right: 163px; }
+
 .pick_1 {
-  padding: 60px;
+  padding: 52px;
   float: left;
   background-color: #69D2E7; }
 
 .pick_2 {
-  padding: 60px;
+  padding: 52px;
   float: left;
   background-color: #A7D6DB; }
 
 .pick_3 {
-  padding: 60px;
+  padding: 52px;
   float: left;
   background-color: #E0E4CC; }
 
 .pick_4 {
-  padding: 60px;
+  padding: 52px;
   float: left;
   background-color: #F38630; }
 
 .pick_5 {
-  padding: 60px;
+  padding: 52px;
   float: left;
   background-color: #FA6900; }
+
+.pick_6 {
+  padding: 52px;
+  float: left;
+  background-color: #E94C6F; }
+
+.pick_7 {
+  padding: 52px;
+  float: left;
+  background-color: #542733; }
+
+.pick_8 {
+  padding: 52px;
+  float: left;
+  background-color: #5A6A62; }
+
+.pick_9 {
+  padding: 52px;
+  float: left;
+  background-color: #C6D5CD; }
+
+.pick_10 {
+  padding: 52px;
+  float: left;
+  background-color: #FDF200; }
 
 /*# sourceMappingURL=main.css.map */

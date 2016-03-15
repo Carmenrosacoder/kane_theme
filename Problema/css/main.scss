@@ -41,8 +41,13 @@ h1{
     padding: 80px 70px;
 }
 /*MIXINS PICK-PALETT*/
+.picks{
+padding-left: 163px;
+padding-right: 163px;
+
+}
 @mixin pick_mixin($background-color) {
-padding: 60px;
+padding: 52px;
 float: left;
 background-color: $background-color;
 }
@@ -59,5 +64,20 @@ background-color: $background-color;
 @include pick_mixin(#F38630 );
 }
 .pick_5{
-@include pick_mixin(#FA6900 );
+@include pick_mixin( #FA6900 );
+}
+.pick_6{
+@include pick_mixin( #E94C6F );
+}
+.pick_7{
+@include pick_mixin( #542733 );
+}
+.pick_8{
+@include pick_mixin( #5A6A62);
+}
+.pick_9{
+@include pick_mixin(#C6D5CD );
+}
+.pick_10{
+@include pick_mixin( #FDF200 );
 }
