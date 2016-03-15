@@ -10,6 +10,10 @@ img {
 h1 {
     font-size: 63px;
 }
+hr{
+    width: 25%;
+    text-align: center;
+}
 .text_b {
     padding: 80px 70px;
 }
@@ -33,7 +37,7 @@ h1 {
 .navbar-default .navbar-nav > li > a:focus {
     @include navbar_mixin(#27AD60 , red);
 }
-/*MIXINS CARROUSEL*/
+/*CARROUSEL*/
 .item {
     background-image: url("../img/carousel-bg.jpg");
     background-size: cover;
@@ -149,13 +153,13 @@ h1 {
         background-color: #E67E22;
     }
 }
-@mixin img_info($background-color, $padding) {
+@mixin img_info($background, $padding) {
     margin: 40px 70px;
-    background-color: $background-color;
+    background: $background;
     padding: $padding;
 }
 .fondo_img {
-    @include img_info(#2C3E50 , 40px);
+    @include img_info( linear-gradient(90deg, #6A7580 40%,#616D79 10%, #2C3E50 50%) , 40px);
 }
 .fondo_team {
     @include img_info(transparent , 0px);
@@ -163,6 +167,9 @@ h1 {
 .boton {
     background-color: #443E44;
     padding: 10px 20px;
+    &:hover{
+        background-color: #A96931;
+    }
 }
 @mixin infoprecio_propie ($background-color, $margin, $padding, $color) {
     background-color: $background-color;
@@ -213,8 +220,6 @@ textarea {
         margin: 70px 8px;
     }
 }
-
-
     .navbar-form {
         padding: 0px;
         margin: 0px 50px;
@@ -238,7 +243,25 @@ button{
     background-color: #443E44;
     border: none;
 }
-hr{
-    width: 25%;
-    text-align: center;
+.services{
+    hr{
+        display: none;
+    }
+}
+.services:hover{
+    background-color: #2A7257;
+    h2{
+        color:#A96931;
+    }
+    hr{
+        width: 100%;
+        display: block;
+    }
+    .fondo_img{
+        -ms-transform: rotate(45deg); /* IE 9 */
+   -webkit-transform: rotate(45deg); /* Safari */
+   transform: rotate(45deg); /* Standard syntax */
+   background: #A96931;
+    }
+
 }

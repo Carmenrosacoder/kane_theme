@@ -10,6 +10,10 @@ img {
 h1 {
   font-size: 63px; }
 
+hr {
+  width: 25%;
+  text-align: center; }
+
 .text_b {
   padding: 80px 70px; }
 
@@ -34,7 +38,7 @@ h1 {
   background-color: #27AD60;
   color: red; }
 
-/*MIXINS CARROUSEL*/
+/*CARROUSEL*/
 .item {
   background-image: url("../img/carousel-bg.jpg");
   background-size: cover;
@@ -179,17 +183,19 @@ h1 {
 
 .fondo_img {
   margin: 40px 70px;
-  background-color: #2C3E50;
+  background: linear-gradient(90deg, #6A7580 40%, #616D79 10%, #2C3E50 50%);
   padding: 40px; }
 
 .fondo_team {
   margin: 40px 70px;
-  background-color: transparent;
+  background: transparent;
   padding: 0px; }
 
 .boton {
   background-color: #443E44;
   padding: 10px 20px; }
+  .boton:hover {
+    background-color: #A96931; }
 
 .info_precio {
   border: 1px solid #27ad60;
@@ -272,8 +278,23 @@ button {
   background-color: #443E44;
   border: none; }
 
-hr {
-  width: 25%;
-  text-align: center; }
+.services hr {
+  display: none; }
+
+.services:hover {
+  background-color: #2A7257; }
+  .services:hover h2 {
+    color: #A96931; }
+  .services:hover hr {
+    width: 100%;
+    display: block; }
+  .services:hover .fondo_img {
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari */
+    transform: rotate(45deg);
+    /* Standard syntax */
+    background: #A96931; }
 
 /*# sourceMappingURL=main.css.map */
