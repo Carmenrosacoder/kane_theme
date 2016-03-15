@@ -1,3 +1,18 @@
+.align-center {
+  text-align: center; }
+
+.text-white {
+  color: white; }
+
+img {
+  width: 100%; }
+
+h1 {
+  font-size: 63px; }
+
+.text_b {
+  padding: 80px 70px; }
+
 /*MIXINS NAVBAR*/
 .navbar-default {
   background-color: #27AD60;
@@ -21,78 +36,244 @@
 
 /*MIXINS CARROUSEL*/
 .item {
-  background-image: url(../img/carousel-bg.jpg);
+  background-image: url("../img/carousel-bg.jpg");
   background-size: cover;
   height: 530px; }
-  .item p {
+  .item p, .item #whatwedo i, #whatwedo .item i {
     font-size: 25px;
     font-weight: normal; }
-
-.align-center {
-  text-align: center; }
-
-.text-white {
-  color: white; }
-
-h1 {
-  font-size: 63px; }
-
-.text_b {
-  padding: 80px 70px; }
 
 /*MIXINS PICK-PALETT*/
 .picks {
   padding-left: 163px;
-  padding-right: 163px; }
+  padding-right: 163px;
+  margin-top: 10px; }
 
 .pick_1 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #69D2E7; }
 
 .pick_2 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #A7D6DB; }
 
 .pick_3 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #E0E4CC; }
 
 .pick_4 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #F38630; }
 
 .pick_5 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #FA6900; }
 
 .pick_6 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #E94C6F; }
 
 .pick_7 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #542733; }
 
 .pick_8 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #5A6A62; }
 
 .pick_9 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #C6D5CD; }
 
 .pick_10 {
-  padding: 52px;
+  padding: 45px;
   float: left;
   background-color: #FDF200; }
+
+.pick_11 {
+  padding: 45px;
+  float: left;
+  background-color: #DB3340; }
+
+.pick_12 {
+  padding: 45px;
+  float: left;
+  background-color: #E8B71A; }
+
+.pick_13 {
+  padding: 45px;
+  float: left;
+  background-color: #F7EAC8; }
+
+.pick_14 {
+  padding: 45px;
+  float: left;
+  background-color: #1FDA9A; }
+
+.pick_15 {
+  padding: 45px;
+  float: left;
+  background-color: #28ABE3; }
+
+.pick_16 {
+  padding: 45px;
+  float: left;
+  background-color: #588C73; }
+
+.pick_17 {
+  padding: 45px;
+  float: left;
+  background-color: #F2E394; }
+
+.pick_18 {
+  padding: 45px;
+  float: left;
+  background-color: #F2AE72; }
+
+.pick_19 {
+  padding: 45px;
+  float: left;
+  background-color: #D96459; }
+
+.pick_20 {
+  padding: 45px;
+  float: left;
+  background-color: #8C4646; }
+
+/*ABOUT*/
+#about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #2C3E50; }
+  #about .citas {
+    padding: 10px 200px; }
+
+#whatwedo {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #27AD60; }
+
+#whatwedo p, #whatwedo i {
+  color: #7CB796;
+  padding: 40px 40px 10px; }
+#whatwedo i {
+  padding: 0;
+  margin: 0 5px; }
+
+.progress {
+  height: 15px;
+  background-color: #DCD5D5;
+  border-radius: 0; }
+  .progress .progress-bar {
+    border: 4px solid #DCD5D5;
+    background-color: #E67E22; }
+
+.fondo_img {
+  margin: 40px 70px;
+  background-color: #2C3E50;
+  padding: 40px; }
+
+.fondo_team {
+  margin: 40px 70px;
+  background-color: transparent;
+  padding: 0px; }
+
+.boton {
+  background-color: #443E44;
+  padding: 10px 20px; }
+
+.info_precio {
+  border: 1px solid #27ad60;
+  background-color: transparent;
+  margin: 20px;
+  padding: 0px;
+  color: white; }
+
+.title1 {
+  background-color: #8F5F38;
+  margin: 0px;
+  padding: 10px;
+  color: white; }
+
+.title {
+  background-color: #8F5F38;
+  margin: 0px;
+  padding: 5px;
+  color: white; }
+
+.white {
+  background-color: white;
+  margin: 0px;
+  padding: 5px;
+  color: black; }
+
+.precio {
+  background-color: #27ad60;
+  margin: 0px;
+  padding: 20px;
+  color: white; }
+
+.boton_info {
+  background-color: transparent;
+  margin: 0px;
+  padding: 30px;
+  color: white; }
+
+.numero {
+  font-size: 30px; }
+
+.getintouch {
+  padding: 10px 200px; }
+
+input,
+textarea {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%; }
+
+#redes {
+  background-image: url("../img/img-divider-img.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: top;
+  height: 400px; }
+  #redes i {
+    font-size: 147px;
+    color: white;
+    margin: 70px 8px; }
+
+.navbar-form {
+  padding: 0px;
+  margin: 0px 50px;
+  position: relative;
+  width: 250px; }
+  .navbar-form .form-control {
+    padding: 6px 45px;
+    display: block; }
+
+button {
+  height: 34px;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  button .fa-envelope {
+    color: #E77E21; }
+
+.btn-default {
+  background-color: #443E44;
+  border: none; }
+
+hr {
+  width: 25%;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,83 +1,244 @@
-/*MIXINS NAVBAR*/
-@mixin navbar_mixin($background-color, $color) {
-background-color: $background-color;
-color: $color;
+.align-center {
+    text-align: center;
 }
-.navbar-default{
-    @include navbar_mixin(#27AD60 , white) ;
-}
-.navbar-default .navbar-nav .active > a {
-    @include navbar_mixin(white , black) ;
-}
-.navbar-default .navbar-nav > li > a{
-    @include navbar_mixin(#27AD60 , white) ;
-}
-.navbar-default .navbar-nav > li > a:hover{
-    @include navbar_mixin(#27AD60 , black) ;
-}
- .navbar-default .navbar-nav > li > a:focus{
-     @include navbar_mixin(#27AD60 , red) ;
- }
-/*MIXINS CARROUSEL*/
-  .item{
-      background-image: url(../img/carousel-bg.jpg);
-      background-size: cover;
-      height: 530px;
-      p{
-          font-size: 25px;
-          font-weight: normal;
-      }
-  }
-.align-center{
-text-align: center;
-}
-.text-white{
+.text-white {
     color: white;
 }
-h1{
+img {
+    width: 100%;
+}
+h1 {
     font-size: 63px;
 }
-.text_b{
+.text_b {
     padding: 80px 70px;
 }
+/*MIXINS NAVBAR*/
+@mixin navbar_mixin($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+}
+.navbar-default {
+    @include navbar_mixin(#27AD60 , white);
+}
+.navbar-default .navbar-nav .active > a {
+    @include navbar_mixin(white , black);
+}
+.navbar-default .navbar-nav > li > a {
+    @include navbar_mixin(#27AD60 , white);
+}
+.navbar-default .navbar-nav > li > a:hover {
+    @include navbar_mixin(#27AD60 , black);
+}
+.navbar-default .navbar-nav > li > a:focus {
+    @include navbar_mixin(#27AD60 , red);
+}
+/*MIXINS CARROUSEL*/
+.item {
+    background-image: url("../img/carousel-bg.jpg");
+    background-size: cover;
+    height: 530px;
+    p {
+        font-size: 25px;
+        font-weight: normal;
+    }
+}
 /*MIXINS PICK-PALETT*/
-.picks{
-padding-left: 163px;
-padding-right: 163px;
-
+.picks {
+    padding-left: 163px;
+    padding-right: 163px;
+    margin-top: 10px;
 }
 @mixin pick_mixin($background-color) {
-padding: 52px;
-float: left;
-background-color: $background-color;
+    padding: 45px;
+    float: left;
+    background-color: $background-color;
 }
-.pick_1{
-@include pick_mixin( #69D2E7 );
+.pick_1 {
+    @include pick_mixin( #69D2E7 );
 }
-.pick_2{
-@include pick_mixin( #A7D6DB );
+.pick_2 {
+    @include pick_mixin( #A7D6DB );
 }
-.pick_3{
-@include pick_mixin( #E0E4CC );
+.pick_3 {
+    @include pick_mixin( #E0E4CC );
 }
-.pick_4{
-@include pick_mixin(#F38630 );
+.pick_4 {
+    @include pick_mixin(#F38630 );
 }
-.pick_5{
-@include pick_mixin( #FA6900 );
+.pick_5 {
+    @include pick_mixin( #FA6900 );
 }
-.pick_6{
-@include pick_mixin( #E94C6F );
+.pick_6 {
+    @include pick_mixin( #E94C6F );
 }
-.pick_7{
-@include pick_mixin( #542733 );
+.pick_7 {
+    @include pick_mixin( #542733 );
 }
-.pick_8{
-@include pick_mixin( #5A6A62);
+.pick_8 {
+    @include pick_mixin( #5A6A62);
 }
-.pick_9{
-@include pick_mixin(#C6D5CD );
+.pick_9 {
+    @include pick_mixin(#C6D5CD );
 }
-.pick_10{
-@include pick_mixin( #FDF200 );
+.pick_10 {
+    @include pick_mixin( #FDF200 );
+}
+.pick_11 {
+    @include pick_mixin( #DB3340 );
+}
+.pick_12 {
+    @include pick_mixin( #E8B71A );
+}
+.pick_13 {
+    @include pick_mixin( #F7EAC8 );
+}
+.pick_14 {
+    @include pick_mixin(#1FDA9A );
+}
+.pick_15 {
+    @include pick_mixin( #28ABE3 );
+}
+.pick_16 {
+    @include pick_mixin( #588C73);
+}
+.pick_17 {
+    @include pick_mixin( #F2E394 );
+}
+.pick_18 {
+    @include pick_mixin( #F2AE72);
+}
+.pick_19 {
+    @include pick_mixin(#D96459 );
+}
+.pick_20 {
+    @include pick_mixin(#8C4646 );
+}
+/*ABOUT*/
+@mixin section_propie($background-color) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $background-color;
+}
+#about {
+    .citas {
+        padding: 10px 200px;
+    }
+    @include section_propie(#2C3E50);
+}
+#whatwedo {
+    @include section_propie(#27AD60);
+}
+#whatwedo {
+    p {
+        color: #7CB796;
+        padding: 40px 40px 10px;
+    }
+    i {
+        @extend p;
+        padding: 0;
+        margin: 0 5px;
+    }
+}
+.progress {
+    height: 15px;
+    background-color: #DCD5D5;
+    border-radius: 0;
+    .progress-bar {
+        border: 4px solid #DCD5D5;
+        background-color: #E67E22;
+    }
+}
+@mixin img_info($background-color, $padding) {
+    margin: 40px 70px;
+    background-color: $background-color;
+    padding: $padding;
+}
+.fondo_img {
+    @include img_info(#2C3E50 , 40px);
+}
+.fondo_team {
+    @include img_info(transparent , 0px);
+}
+.boton {
+    background-color: #443E44;
+    padding: 10px 20px;
+}
+@mixin infoprecio_propie ($background-color, $margin, $padding, $color) {
+    background-color: $background-color;
+    margin: $margin;
+    padding: $padding;
+    color: $color;
+}
+.info_precio {
+    border: 1px solid #27ad60;
+    @include infoprecio_propie(transparent , 20px , 0px ,white );
+}
+.title1 {
+    @include infoprecio_propie(#8F5F38 , 0px , 10px , white);
+}
+.title {
+    @include infoprecio_propie(#8F5F38 , 0px , 5px , white);
+}
+.white {
+    @include infoprecio_propie(white , 0px , 5px , black);
+}
+.precio {
+    @include infoprecio_propie(#27ad60 , 0px , 20px , white);
+}
+.boton_info {
+    @include infoprecio_propie(transparent , 0px , 30px , white);
+}
+.numero {
+    font-size: 30px;
+}
+.getintouch {
+    padding: 10px 200px;
+}
+input,
+textarea {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+#redes {
+    background-image: url("../img/img-divider-img.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: top;
+    height: 400px;
+    i {
+        font-size: 147px;
+        color: white;
+        margin: 70px 8px;
+    }
+}
+
+
+    .navbar-form {
+        padding: 0px;
+        margin: 0px 50px;
+        position: relative;
+        width: 250px;
+        .form-control{
+            padding: 6px 45px;
+            display: block;
+        }
+}
+button{
+    height: 34px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    .fa-envelope{
+        color:#E77E21;
+    }
+}
+.btn-default{
+    background-color: #443E44;
+    border: none;
+}
+hr{
+    width: 25%;
+    text-align: center;
 }
