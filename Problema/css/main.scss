@@ -4,6 +4,12 @@
 .text-white {
     color: white;
 }
+.text-black{
+    color: black;
+}
+.text-orange{
+    color: #a96931;
+}
 img {
     width: 100%;
 }
@@ -15,7 +21,7 @@ hr{
     text-align: center;
 }
 .text_b {
-    padding: 80px 70px;
+    padding: 100px 70px;
 }
 /*MIXINS NAVBAR*/
 @mixin navbar_mixin($background-color, $color) {
@@ -52,9 +58,13 @@ hr{
     padding-left: 163px;
     padding-right: 163px;
     margin-top: 10px;
+
+    width: 100%;
 }
 @mixin pick_mixin($background-color) {
-    padding: 45px;
+    margin-bottom: 10px;
+    width: 20%;
+    height: 100px;
     float: left;
     background-color: $background-color;
 }
@@ -171,6 +181,7 @@ hr{
         background-color: #A96931;
     }
 }
+
 @mixin infoprecio_propie ($background-color, $margin, $padding, $color) {
     background-color: $background-color;
     margin: $margin;
@@ -181,20 +192,30 @@ hr{
     border: 1px solid #27ad60;
     @include infoprecio_propie(transparent , 20px , 0px ,white );
 }
-.title1 {
+.info_precio:hover{
+    margin-top: 0px;
+    border: 1px solid #a96931;
+}
+.title_1 {
     @include infoprecio_propie(#8F5F38 , 0px , 10px , white);
 }
-.title {
+.title_2 {
     @include infoprecio_propie(#8F5F38 , 0px , 5px , white);
 }
-.white {
+.white1 {
     @include infoprecio_propie(white , 0px , 5px , black);
 }
-.precio {
+.precio_started{
     @include infoprecio_propie(#27ad60 , 0px , 20px , white);
 }
 .boton_info {
     @include infoprecio_propie(transparent , 0px , 30px , white);
+}
+.title {
+    @include infoprecio_propie(transparent , 0px , 5px , white);
+}
+.title1 {
+    @include infoprecio_propie(transparent , 0px , 10px , white);
 }
 .numero {
     font-size: 30px;
@@ -213,7 +234,7 @@ textarea {
     background-size: cover;
     background-repeat: repeat-y;
     background-position: top;
-    height: 400px;
+    height: 500px;
     i {
         font-size: 147px;
         color: white;
@@ -258,10 +279,20 @@ button{
         display: block;
     }
     .fondo_img{
-        -ms-transform: rotate(45deg); /* IE 9 */
-   -webkit-transform: rotate(45deg); /* Safari */
-   transform: rotate(45deg); /* Standard syntax */
+       
+   transform: rotate(45deg); 
    background: #A96931;
     }
 
+}
+@media only screen and(max-width:420px) {
+    #about .citas , .getintouch , #redes i{
+        padding:0px;
+        margin: 0px;
+    }
+    #pick_palet .container .picks{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
 }

@@ -4,6 +4,12 @@
 .text-white {
   color: white; }
 
+.text-black {
+  color: black; }
+
+.text-orange {
+  color: #a96931; }
+
 img {
   width: 100%; }
 
@@ -15,7 +21,7 @@ hr {
   text-align: center; }
 
 .text_b {
-  padding: 80px 70px; }
+  padding: 100px 70px; }
 
 /*MIXINS NAVBAR*/
 .navbar-default {
@@ -51,105 +57,146 @@ hr {
 .picks {
   padding-left: 163px;
   padding-right: 163px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  width: 100%; }
 
 .pick_1 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #69D2E7; }
 
 .pick_2 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #A7D6DB; }
 
 .pick_3 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #E0E4CC; }
 
 .pick_4 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #F38630; }
 
 .pick_5 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #FA6900; }
 
 .pick_6 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #E94C6F; }
 
 .pick_7 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #542733; }
 
 .pick_8 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #5A6A62; }
 
 .pick_9 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #C6D5CD; }
 
 .pick_10 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #FDF200; }
 
 .pick_11 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #DB3340; }
 
 .pick_12 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #E8B71A; }
 
 .pick_13 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #F7EAC8; }
 
 .pick_14 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #1FDA9A; }
 
 .pick_15 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #28ABE3; }
 
 .pick_16 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #588C73; }
 
 .pick_17 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #F2E394; }
 
 .pick_18 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #F2AE72; }
 
 .pick_19 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #D96459; }
 
 .pick_20 {
-  padding: 45px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 100px;
   float: left;
   background-color: #8C4646; }
 
@@ -204,25 +251,29 @@ hr {
   padding: 0px;
   color: white; }
 
-.title1 {
+.info_precio:hover {
+  margin-top: 0px;
+  border: 1px solid #a96931; }
+
+.title_1 {
   background-color: #8F5F38;
   margin: 0px;
   padding: 10px;
   color: white; }
 
-.title {
+.title_2 {
   background-color: #8F5F38;
   margin: 0px;
   padding: 5px;
   color: white; }
 
-.white {
+.white1 {
   background-color: white;
   margin: 0px;
   padding: 5px;
   color: black; }
 
-.precio {
+.precio_started {
   background-color: #27ad60;
   margin: 0px;
   padding: 20px;
@@ -232,6 +283,18 @@ hr {
   background-color: transparent;
   margin: 0px;
   padding: 30px;
+  color: white; }
+
+.title {
+  background-color: transparent;
+  margin: 0px;
+  padding: 5px;
+  color: white; }
+
+.title1 {
+  background-color: transparent;
+  margin: 0px;
+  padding: 10px;
   color: white; }
 
 .numero {
@@ -251,7 +314,7 @@ textarea {
   background-size: cover;
   background-repeat: repeat-y;
   background-position: top;
-  height: 400px; }
+  height: 500px; }
   #redes i {
     font-size: 147px;
     color: white;
@@ -289,12 +352,16 @@ button {
     width: 100%;
     display: block; }
   .services:hover .fondo_img {
-    -ms-transform: rotate(45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    /* Safari */
     transform: rotate(45deg);
-    /* Standard syntax */
     background: #A96931; }
+
+@media only screen and (max-width: 420px) {
+  #about .citas, .getintouch, #redes i {
+    padding: 0px;
+    margin: 0px; }
+
+  #pick_palet .container .picks {
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
