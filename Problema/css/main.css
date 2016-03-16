@@ -368,6 +368,9 @@ button {
     padding-right: 0px; }
 
   .footer_icon {
-    padding: 0px; } }
+    padding: 0px; }
+
+  button {
+    top: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
