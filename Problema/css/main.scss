@@ -285,6 +285,9 @@ button{
     }
 
 }
+.footer_icon{
+    padding:10px 80px;
+}
 @media only screen and(max-width:420px) {
     #about .citas , .getintouch , #redes i{
         padding:0px;
@@ -294,5 +297,7 @@ button{
         padding-left: 0px;
         padding-right: 0px;
     }
-    
+    .footer_icon{
+        padding: 0px;
+    }
 }
